@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">NewSite</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="nav justify-content-center">
+      <li class="nav-item active me-5">
+        <%= link_to "Accueil", {:controller => 'pages', :action => 'home'}  %>
+      </li>
+      <li class="nav-item me-5">
+        <%= link_to 'S\'inscrire', {:controller => 'registrations', :action => 'new'}  %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'A Propos', {:controller => 'pages', :action => 'about'}  %>
+      </li>
+
+    </ul>
+  </div>
+</nav>
